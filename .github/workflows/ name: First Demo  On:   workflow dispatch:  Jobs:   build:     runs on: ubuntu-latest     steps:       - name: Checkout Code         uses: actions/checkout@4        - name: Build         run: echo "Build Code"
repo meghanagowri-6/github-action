@@ -4,12 +4,12 @@ name: First Demo
 On:
   workflow dispatch:
 
-Jobs:
+jobs:
   build:
     runs on: ubuntu-latest
     steps:
       - name: Checkout Code
-        uses: actions/checkout@4
+        uses: actions/checkout@v4
 
       - name: Build
         run: echo "Build Code"
